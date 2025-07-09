@@ -1,0 +1,86 @@
+/* Table base style */
+.order-container table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: Arial, sans-serif;
+  margin: 1em 0;
+  margin-bottom: 400px;
+}
+
+.order-container th,
+.order-container td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+
+}
+
+/* Header background */
+.order-container thead {
+  background-color: #f5f5f5;
+}
+
+.order-container th {
+  font-weight: 600;
+  color: #333;
+}
+
+/* Zebra striping */
+.order-container tbody tr:nth-child(odd) {
+  background-color: #f9f9f9;
+} /* Uses CSS :nth-child for alternating rows :contentReference[oaicite:1]{index=1} */
+
+/* Hover highlight */
+.order-container tbody tr:hover {
+  background-color: #eef;
+}
+
+/* Total row emphasis */
+.order-container tbody tr:last-child td {
+  background-color: #ececec;
+  font-weight: bold;
+}
+
+/* Responsive layout for small devices */
+@media only screen and (max-width: 760px) {
+  .order-container table,
+  .order-container thead,
+  .order-container tbody,
+  .order-container th,
+  .order-container td,
+  .order-container tr {
+    display: block;
+  }
+
+  .order-container thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+
+  .order-container tr {
+    border: 1px solid #ccc;
+    margin-bottom: 0.625em;
+  }
+
+  .order-container td {
+    border: none;
+    border-bottom: 1px solid #eee;
+    position: relative;
+    padding-left: 50%;
+  }
+
+  .order-container td:before {
+    content: attr(data-label);
+    position: absolute;
+    left: 0;
+    width: 45%;
+    padding-left: 8px;
+    font-weight: bold;
+    white-space: nowrap;
+  }
+
+  .order-container td:last-child {
+    border-bottom: 0;
+  }
+} /* Stack rows as cards on mobile using CSS blocks and data-label technique :contentReference[oaicite:2]{index=2} */

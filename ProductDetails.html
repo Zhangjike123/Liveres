@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details</title>
+    <link rel="stylesheet" href="./product-details.css">
+    <script src="https://kit.fontawesome.com/ca4cfe2a2c.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- Header section -->
+    <header>
+        <nav>
+            <div class="new-logo">
+                <img src="https://placehold.co/200x80?text=ShopLogo" alt="Restaurant Logo">
+            </div>
+
+            <div class="nav-right-group">
+                <ul class="new-right-list">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="menu.html">Our Menu</a></li>
+                    <li><a href="ProductDetails.html">Our Offer</a></li>
+                    <li><a href="aboutus.html">know us More</a></li>
+                    <li><a href="order.html">Your order</a></li>
+                    <li><a href="cart.html">Cart (0)</a></li>
+                </ul>
+                <div class="login">
+                    <a href="login.html">Login/SignUP</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- product details section -->
+    <section class="product-details">
+        <div class="product-image-conatainer">
+            <img class="product-image" src="https://placehold.co/400x500?text=ProductImage" alt="Product Image"
+                class="product-image">
+        </div>
+
+        <div class="product-info-container">
+            <div class="product-info">
+                <div>
+                    <h1 class="product-name">Product Name</h1>
+                    <p class="product-rating" id="productRating">
+                        <input type="radio" name="rating" id="rating-5" class="sr-only">
+                        <label for="rating-5">
+                            <i class="fas fa-star icon-checked"></i>
+                            <i class="far fa-star icon-unchecked"></i>
+                            <span>(2.0)</span>
+                        </label>
+                    </p>
+                </div>
+                <P class="product-description">
+                    This is a detailed description of the product. It includes information about the product's features,
+                    benefits, and any other relevant details.
+                </P>
+                <div class="product-cta">
+                    <p class="product-price">$49.99</p>
+                    <div>
+                        <button class="add-to-cart">Add to Cart</button>
+                        <button class="add-to-cart">Order it</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- Recommended Section (for the products) -->
+
+    <!-- Menu Section -->
+    <section id="menu" class="menu-section">
+        <div class="menu-category">
+            <div class="category-header">
+                <h3>Recommended</h3>
+            </div>
+            <!-- Best Seller category -->
+            <div class="menu-category ">
+                <div class="category-header">
+                </div>
+                <div class="menu-items" id="best-seller">
+                    <!-- Data will be appended dynamically -->
+                </div>
+            </div>
+        </div>
+
+
+        <!-- footer section -->
+        <footer class="footer">
+            <div class="footer-content">
+                <!-- Logo Section -->
+                <div class="footer-section logo-section">
+                    <img src="https://via.placeholder.com/150x50?text=ShopLogo" alt="Shop Logo" class="footer-logo" />
+                </div>
+                <!-- Quick Links Section -->
+                <div class="footer-section links-section">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#menu">Our Menu</a></li>
+                        <li><a href="#offers">Our Offers</a></li>
+                        <li><a href="#about">Know What We Have Achieved</a></li>
+                    </ul>
+                </div>
+                <!-- Social & Subscription Section -->
+                <div class="footer-section social-subscribe">
+                    <h3>Wanna Get Updated with Our Exciting Offers?</h3>
+                    <div class="social-links">
+                        <p>Follow us on:</p>
+                        <a href="#" class="social-link">Instagram</a> |
+                        <a href="#" class="social-link">Facebook</a> |
+                        <a href="#" class="social-link">Twitter</a>
+                    </div>
+                    <hr />
+                    <div class="subscribe-form">
+                        <input type="email" placeholder="Subscribe for daily exciting offers" />
+                        <button type="button">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>
+                    <a href="#terms">Terms & Conditions</a> |
+                    <a href="#privacy">Privacy Policy</a> |
+                    <a href="#reserved">All Rights Reserved</a>
+                </p>
+            </div>
+        </footer>
+
+        <!-- link js script using script tag -->
+        <script src="menu.js"></script>
+</body>
+
+</html>

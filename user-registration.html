@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Registration Page</title>
+    <link rel="stylesheet" href="./user-reg.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="https://placehold.co/200x80?text=ShopLogo" alt="logo" class="shop-logo">
+                </a>
+            </div>
+        </nav>
+    </header>
+    <div class="form-container">
+        <form class="user-reg">
+            <h2>OTP verification</h2>
+            <p class="otp-input">Enter the 4-digit OTP sent to your registered mobile number</p>
+
+            <div class="otp-inputs">
+                <input type="text" class="otp-input" pattern="[0-9]" inputmode="numeric" maxlength="1" required>
+                <input type="text" class="otp-input" pattern="[0-9]" inputmode="numeric" maxlength="1" required>
+                <input type="text" class="otp-input" pattern="[0-9]" inputmode="numeric" maxlength="1" required>
+                <input type="text" class="otp-input" pattern="[0-9]" inputmode="numeric" maxlength="1" required>
+            </div>
+
+            <p class="resend-info">
+                Didn't receive the OTP? <a href="#" class="resend-link">Resend OTP</a>
+            </p>
+            <button type="submit">Verify</button>
+        </form>
+    </div>
+    <script>
+     // need the after enterting the digit it should be mvisible in the input box
+
+        const otpInputs = document.querySelectorAll('.otp-input');
+        otpInputs.forEach(input => {
+            input.addEventListener('input', () => {
+                if (input.value.length === 1) {
+                    input.nextElementSibling.focus();
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>

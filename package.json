@@ -1,0 +1,7 @@
+{
+  "type": "module",
+  "dependencies": {
+    "fetch-with-file-support": "^2.0.1",
+    "node-localstorage": "^3.0.5"
+  }
+}

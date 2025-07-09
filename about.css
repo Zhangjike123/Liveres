@@ -1,0 +1,66 @@
+.about-container {
+  display: flex;
+  gap: 4rem;
+  padding: 4rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Shared headings */
+.about-container h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #333;
+  text-align: left;
+  font-family: Arial, sans-serif;
+}
+
+/* 🧩 About Section */
+.about {
+  flex: 1 1 0;
+  background: #fff;
+  color: #555;
+  padding: 2rem;
+  border-radius: 8px;
+  line-height: 1.6;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+/* 🪑 Reserve Section */
+.reserve {
+  flex: 1 0 0;
+  background: #fafafa;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+.reserve form {
+  display: grid;
+  gap: 1rem;
+}
+.reserve input,
+.reserve button {
+  padding: 0.75rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.reserve button {
+  background: #457b9d;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+.reserve button:hover {
+  background: #1d3557;
+}
+
+/* 📱 Mobile-first responsive */
+@media(max-width: 900px) {
+  .about-container {
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem 1rem;
+  }
+}
